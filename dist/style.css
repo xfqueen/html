@@ -1,0 +1,67 @@
+
+@font-face{
+    font-family: 'pingfing';
+    src: url('../assets/捡来的苹果字体.ttf')
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'pingfing';
+}
+.public .picture .logo{
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/夜景\ \(2\).jpg);
+    background-size: cover;
+    
+}
+.nav{
+    width: 100%;
+    height: 4rem;
+}
+nav{
+    background-color: khaki;
+    width: 100%;
+    height: 100%;
+
+}
+nav ul{height: 4rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 2rem 0 0 ;
+    float: left;
+    list-style: none;
+    width: 4rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+
+}
+a:hover{
+    background-color: aqua;
+
+}
+.main{
+    width: 100%;
+    height: 800px;
+    background-image: url(../assets/首页背景.jpg);
+    background-size: cover;
+
+}
+.main h1{
+    text-indent: 4rem;
+}
