@@ -89,7 +89,7 @@ $(function(){
 		$(".songName").html(songName);
 		$(".songPlayer").html(singerName);
 		/*换右侧图片*/
-		$("#canvas1").attr("src",'images/'+sid+'.jpg');
+		$("#canvas1").attr("src",'./dist/images/'+sid+'.jpg');
 		$("#canvas1").load(function(){
 			loadBG();
 		});

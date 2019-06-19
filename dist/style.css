@@ -27,6 +27,8 @@ body{
     width: 100%;
     height: 3rem;
     background-color: #eeeeee;
+    border-bottom: 1px #050505 solid;
+    /* box-shadow: 0 -1px 2px inset #050505; */
 }
 .nav .left{
     display: flex;
@@ -53,14 +55,14 @@ body{
 .nav .left .serch img{
     width: 1.2rem;
 }
-nav{
+.nav nav{
     background-color: #eeeeee;
     width: 30rem;
     float: left;
     height: 100%;
-
+    /* box-shadow: 0 -5px 5px 0px inset #050505; */
 }
-nav ul{
+.nav nav ul{
     height: 3rem;
     width: 80%;
     margin: auto;
@@ -68,7 +70,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
-nav ul li{
+.nav nav ul li{
     /* margin: 0 2rem 0 0 ; */
     float: left;
     list-style: none;
@@ -87,21 +89,30 @@ nav ul li{
     height: 100%;
 
 }
-.nav .left nav ul li a:link{
+.nav .left nav ul li a:link,.nav .left nav ul li a:visited,.nav .left nav ul li a:active{
     color: black;
 }
-.nav .left nav ul li a:active{
-    color: white;
-}
 .nav .left nav ul li a:hover{
-    background-color: white;
+    color: white;
+    background-color: #ff0000;
 }
 .nav .left nav ul li:hover{
-    border-bottom: 4px red solid;
+    border-bottom: 4px #990000 solid;
 }
 .nav .right{
-    width: 3rem;
     height: 3rem;
+}
+.nav .right{
+    padding-right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .right .ricon span{
+    padding-right: 0.7rem;
+}
+.nav .right .ricon span:hover{
+    color: #ff0000;
 }
 .main{
     width: 100%;
