@@ -114,6 +114,21 @@ body{
 .nav .right .ricon span:hover{
     color: #ff0000;
 }
+.nav .right .headerlogo{
+    width: 3.0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .right .headerlogo img{
+    width: 2.0rem;
+    height: 2.0rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav .right .headerlogo i{
+    font-size: 0.9rem;
+}
 .main{
     width: 100%;
     height: 800px;

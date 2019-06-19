@@ -48,7 +48,7 @@ $(function(){
 		/*开始放歌*/
 		var sid=$(this).attr("sonN");
 		songIndex=sid;
-		$("#audio").attr("src",'songs/'+sid+'.mp3');	
+		$("#audio").attr("src",'./dist/music/song ('+sid+').mp3');	
 		audio=document.getElementById("audio");//获得音频元素
 		/*显示歌曲总长度*/
 		if(audio.paused){
