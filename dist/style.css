@@ -3,7 +3,11 @@
     font-family: 'pingfing';
     src: url('../assets/捡来的苹果字体.ttf')
 }
-
+*{
+    transition: all 0.4s;
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     padding: 0;
@@ -18,7 +22,7 @@ body{
 }
 .nav{
     width: 100%;
-    height: 4rem;
+    height: 3rem;
 }
 nav{
     background-color: khaki;
@@ -26,7 +30,8 @@ nav{
     height: 100%;
 
 }
-nav ul{height: 4rem;
+nav ul{
+    height: 3rem;
     width: 80%;
     margin: auto;
     display: flex;
@@ -43,7 +48,7 @@ nav ul li{
     align-items: center;
     justify-content: center;
 }
-a{
+.nav nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,9 +57,17 @@ a{
     height: 100%;
 
 }
-a:hover{
-    background-color: aqua;
-
+.nav nav ul li a:link{
+    color: black;
+}
+.nav nav ul li a:active{
+    color: white;
+}
+.nav nav ul li a:hover{
+    background-color: white;
+}
+.nav nav ul li:hover{
+    border-bottom: 4px red solid;
 }
 .main{
     width: 100%;
