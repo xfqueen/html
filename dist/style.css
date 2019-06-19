@@ -1,7 +1,7 @@
 
 @font-face{
     font-family: 'pingfing';
-    src: url('../assets/捡来的苹果字体.ttf')
+    src: url('../dist/font/捡来的苹果字体.ttf')
 }
 *{
     transition: all 0.4s;
@@ -16,17 +16,47 @@ body{
 .public .picture .logo{
     width: 100%;
     height: 200px;
-    background-image: url(../assets/夜景\ \(2\).jpg);
+    background-image: url(../assets/images/夜景\ \(2\).jpg);
     background-size: cover;
     
 }
 .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 3rem;
+    background-color: #eeeeee;
+}
+.nav .left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.nav .left img{
+    float: left;
+    width: 5rem;
+    margin-left: 1rem;
+}
+.nav .left .serch{
+    display: flex;
+}
+.nav .left .serch input{
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 1.7rem;
+    width: 12rem;
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
+.nav .left .serch img{
+    width: 1.2rem;
 }
 nav{
-    background-color: khaki;
-    width: 100%;
+    background-color: #eeeeee;
+    width: 30rem;
+    float: left;
     height: 100%;
 
 }
@@ -39,16 +69,16 @@ nav ul{
     justify-content: center;
 }
 nav ul li{
-    margin: 0 2rem 0 0 ;
+    /* margin: 0 2rem 0 0 ; */
     float: left;
     list-style: none;
-    width: 4rem;
+    width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.nav nav ul li a{
+.nav .left nav ul li a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,22 +87,26 @@ nav ul li{
     height: 100%;
 
 }
-.nav nav ul li a:link{
+.nav .left nav ul li a:link{
     color: black;
 }
-.nav nav ul li a:active{
+.nav .left nav ul li a:active{
     color: white;
 }
-.nav nav ul li a:hover{
+.nav .left nav ul li a:hover{
     background-color: white;
 }
-.nav nav ul li:hover{
+.nav .left nav ul li:hover{
     border-bottom: 4px red solid;
+}
+.nav .right{
+    width: 3rem;
+    height: 3rem;
 }
 .main{
     width: 100%;
     height: 800px;
-    background-image: url(../assets/首页背景.jpg);
+    background-image: url(../assets/images/首页背景.jpg);
     background-size: cover;
 
 }
